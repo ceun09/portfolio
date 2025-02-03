@@ -135,7 +135,7 @@
 }
 .intro-bottom {}
 .intro-img {
-  background-image: url('images/thumbnail/face_samyang.jpg');
+  background-image: url('../images/thumbnail/face_samyang.jpg');
   background-size: cover;
   background-position: center top;
   margin: 50rem 0 70rem;
@@ -179,19 +179,19 @@
 }
 
 .feat-tabs .box:nth-child(1) {
-  background-image: url('images/temp_img_01.jpg');
+  background-image: url('../images/temp_img_01.jpg');
 }
 
 .feat-tabs .box:nth-child(2) {
-  background-image: url('images/original/shubham-dhage-hphA7EHLHR4-unsplash.jpg');
+  background-image: url('../images/original/shubham-dhage-hphA7EHLHR4-unsplash.jpg');
 }
 
 .feat-tabs .box:nth-child(3) {
-  background-image: url('images/original/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg');
+  background-image: url('../images/original/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg');
 }
 
 .feat-tabs .box:nth-child(4) {
-  background-image: url('images/original/shubham-dhage-TbhRAV5xDtA-unsplash.jpg');
+  background-image: url('../images/original/shubham-dhage-TbhRAV5xDtA-unsplash.jpg');
 }
 
 .feat-tabs .box:not(.on) {
@@ -481,7 +481,7 @@
 }
 .mainStep .cta {
   position: relative;
-  background-image: url('images/original/shubham-dhage-hphA7EHLHR4-unsplash.jpg');
+  background-image: url('../images/original/shubham-dhage-hphA7EHLHR4-unsplash.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 30rem;
