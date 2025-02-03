@@ -1,0 +1,195 @@
+/* Header CSS */
+
+.gnbMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 10rem 10%;
+  -webkit-transition: padding .3s, background-color .6s ease-out;
+  -moz-transition: padding .3s, background-color .6s ease-out;
+  -o-transition: padding .3s, background-color .6s ease-out;
+  transition: padding .3s, background-color .6s ease-out;
+  z-index: 999;
+}
+
+.hd-logo {
+  color: #fff;
+}
+
+.gnbMain .right {
+  display: flex;
+  flex-direction: row;
+}
+
+.gnb-wrap {
+  padding-right: 30rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gnb-wrap .link {
+  padding: 0 10rem;
+}
+
+.gnb-wrap .link-item {
+  color: #fff;
+  font-size: 18rem;
+}
+
+.gnb-wrap.mobile {
+  display: none;
+}
+.gnb-wrap.mobile .toggle-btn {
+  /* 정식 아이콘을 반영하지 않아서 임의로 지정한 사이즈 */
+  /* 추후 변경 또는 삭제 예정 */
+  display: inline-block;
+  width: 36rem;
+  height: 36rem;
+}
+.gnb-wrap.mobile .toggle-btn-icon {
+  position: relative;
+  /* 정식 아이콘을 반영하지 않아서 임의로 지정한 사이즈 */
+  /* 추후 변경 또는 삭제 예정 */
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.gnb-wrap.mobile .toggle-btn-icon::before,
+.gnb-wrap.mobile .toggle-btn-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2rem;
+  background-color: #fff;
+}
+.gnb-wrap.mobile .toggle-btn-icon::before {
+  -webkit-transform: translateY(-5rem);
+  -moz-transform: translateY(-5rem);
+  -o-transform: translateY(-5rem);
+  transform: translateY(-5rem);
+}
+.gnb-wrap.mobile .toggle-btn-icon::after {
+  -webkit-transform: translateY(5rem);
+  -moz-transform: translateY(5rem);
+  -o-transform: translateY(5rem);
+  transform: translateY(5rem);
+}
+
+#header.color {
+  padding: 15rem 5%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255,255,255, .4);
+  border-bottom: 1px solid rgba(255,255,255, .2);
+}
+
+#header.color .hd-logo,
+#header.color .gnb-wrap .link-item {
+  color: #222;
+}
+
+#header.color .gnb-wrap.mobile .toggle-btn-icon::before,
+#header.color .gnb-wrap.mobile .toggle-btn-icon::after {
+  background-color: #222;
+}
+
+@media screen and (max-width: 768px) {
+  #header,
+  #header.color {
+    padding: 15rem 30rem;
+  }
+  .gnb-wrap.mobile {
+      display: block;
+      padding: 0;
+  }
+
+  .gnb-wrap.pc {
+      display: none;
+  }
+}
+
+/* Dark Mode Button */
+.btn_mode-wrap {
+  display: flex;
+  align-items: center;
+}
+.btn_mode {
+  position: relative;
+  width: 80rem;
+  height: 35rem;
+  background-color: var(--highlight-color);
+  border: 0;
+  border-radius: 5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn_mode .md {
+  padding: 0 10rem;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  font-size: 15rem;
+}
+.md.dark, .on .md.light {
+  display: none;
+}
+.md.light, .on .md.dark {
+  display: flex;
+}
+.md .icon {
+  max-width: 20rem;
+  max-height: 20rem;
+  font-size: 20rem;
+  -webkit-transition: .4.5s;
+  -moz-transition: .4.5s;
+  -o-transition: .4.5s;
+  transition: .4.5s;
+}
+.on .md.dark .icon,
+.md.light .icon {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+.md.dark .icon,
+.on .md.light .icon {
+  transform: translateY(10rem);
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .gnbMain .btn_mode-wrap {
+    display: none;
+  }
+}
+
+/* 숨김 처리 */
+.toggle-dot {
+  display: none;
+  position: absolute;
+  left: 10rem;
+  top: 50%;
+  width: 22rem;
+  height: 22rem;
+  background-color: #222;
+  border-radius: 100%;
+  transform: translateY(-50%);
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  z-index: 2;
+}
+.on .toggle-dot {
+  left: calc(100% - 30rem);
+}

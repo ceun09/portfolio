@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Page</title>
+  <link rel="stylesheet" href="/style.css">
+  <!-- Google Icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script type="text/javascript" src="/script.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- Custom Cursor -->
+    <div class="cursor-wrap">
+      <div class="cursor-label">
+        <span class="label">View More</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <nav id="header" class="gnbMain">
+      <h1 class="hd-logo">Portfolio</h1>
+      <div class="right">
+        <!-- GNB PC -->
+        <ul class="gnb-wrap pc">
+          <li>
+            <a class="link sl-btn" href="#section-01">
+              <span class="link-item sl-item">Home</span>
+              <span class="link-item sl-item">Home</span>
+            </a>
+          </li>
+          <li>
+            <a class="link sl-btn" href="#section-02">
+              <span class="link-item sl-item">Intro</span>
+              <span class="link-item sl-item">Intro</span>
+            </a>
+          </li>
+          <li>
+            <a class="link sl-btn" href="#section-03">
+              <span class="link-item sl-item">Skill</span>
+              <span class="link-item sl-item">Skill</span>
+            </a>
+          </li>
+          <li>
+            <a class="link sl-btn" href="#section-04">
+              <span class="link-item sl-item">Portfolio</span>
+              <span class="link-item sl-item">Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a class="link sl-btn" href="#section-05">
+              <span class="link-item sl-item">History</span>
+              <span class="link-item sl-item">History</span>
+            </a>
+          </li>
+        </ul>
+        <!-- Dark Mode Button -->
+        <div class="btn_mode-wrap">
+          <button class="btn_mode">
+            <div class="toggle-dot"></div>
+            <div class="md dark"><span class="icon material-symbols-outlined">
+              dark_mode
+              </span>Dark
+            </div>
+            <div class="md light"><span class="icon material-symbols-outlined">
+              light_mode
+              </span>Light
+            </div>
+          </button>
+        </div>
+        <!-- Mobile Toggle -->
+        <div class="gnb-wrap toggle-list mobile">
+          <a class="toggle-btn" href="#none">
+            <i class="icon toggle-btn-icon"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- section 01 : Main visual -->
+    <section id="section-01" class="mainVisual sc-max full-h">
+      <div class="visual-wrap">
+        <!-- Background -->
+        <div class="visual-bg"></div>
+        <!-- Text -->
+        <div class="visual-text-wrap">
+          <div class="detail" data-ani="fade-up">
+            Hello, My name is CHO EUN
+          </div>
+          <div class="visual-head">
+            <span class="el">P</span>
+            <span class="el">O</span>
+            <span class="el">R</span>
+            <span class="el">T</span>
+            <span class="el">F</span>
+            <span class="el">O</span>
+            <span class="el">L</span>
+            <span class="el">I</span>
+            <span class="el">O</span>
+          </div>
+        </div>
+        <!-- Side -->
+        <div class="visual-side-wrap">
+          <div class="visual-side">
+            <ul class="vs-email box">
+              <li><a class="vs-email_btn" href="mailto:ceun0910@gmail.com">Email Me
+                <span class="gg material-symbols-outlined">
+                  arrow_right_alt
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <ul class="vs-text box">
+              <li data-text="Web Publishing">Web Publishing</li>
+              <li data-text="Web UI/UX Design">Web UI/UX Design</li>
+              <li data-text="Project Management">Project Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 02 : Intro -->
+    <div id="section-02" class="mainIntro sc-max">
+      <div class="layout">
+        <div class="intro-top alignCenter">
+          <h2 class="intro-head" data-ani="fade-up">Web Publisher</h2>
+          <p class="intro-desc">웹 디자인, 코드 기반 프론트엔드, 자바 스크립트 위주 솔루션 개발</p>
+        </div>
+        <div class="intro-bottom">
+          <div class="intro-img roundImg">
+            <img src="/images/thumbnail/face_samyang.jpg" alt="">
+          </div>
+          <div class="col-2">
+            <div class="txt-box left">
+              <h4 class="txt-head">ABOUT ME</h4>
+            </div>
+            <div class="txt-box right">
+              <p class="txt-desc">맡은 일에 최선을 다하는 것이 저의 강점입니다. 가능한 선에서 최선의 결과를 만들었을 때 뿌듯함을 느끼고, 조금씩 가능의 범위를 넓혀가는 것을 비전으로 삼고 있습니다. 모르는 것은 배우고, 서툰 것은 익히면서 꾸준하게 성실히 나아가고 싶습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 03 : Feature -->
+    <section id="section-03" class="mainFeature sc-max full-h">
+      <div class="layout wide">
+        <div class="sec-box">
+          <div class="sec-tit alignCenter">
+            <h3 class="sec-head" data-ani="fade-up">Work Skill</h3>
+            <p class="sec-desc">This is my work skill for work space</p>
+          </div>
+          <div class="cont-box">
+            <!-- Tab Menu -->
+            <div class="tab-menu feat-tabs">
+              <a href="#none" class="box on ani-item">
+                <span class="h-en">Publishing</span>
+                <p class="h-kr">퍼블리싱</p>
+              </a>
+              <a href="#none" class="box ani-item">
+                <span class="h-en">Responsibility</span>
+                <p class="h-kr">책임감</p>
+              </a>
+              <a href="#none" class="box ani-item">
+                <span class="h-en">Industrious</span>
+                <p class="h-kr">성실함</p>
+              </a>
+              <a href="#none" class="box ani-item">
+                <span class="h-en">Communication</span>
+                <p class="h-kr">커뮤니케이션</p>
+              </a>
+            </div>
+            <!-- Tab Contents -->
+            <div class="tab-content feat-cont">
+              <!-- Content 1 -->
+              <div class="cont-area on">
+                <div class="icon">
+                  <span class="gg material-symbols-outlined">
+                    monitor
+                  </span>
+                </div>
+                <h4 class="head">퍼블리싱<sup>01</sup></h4>
+                <p class="kr desc">HTML5와 CSS3를 사용하여 웹 표준을 지키는 퍼블리싱을 합니다. 주요 작업 환경 세팅은 Visual Studio Code와 Figma 또는
+                  Photoshop을 활용하는 편입니다. 접근성을 높이는 방법이나 반응형 작업에 많은 관심을 가지고 있습니다. 인터랙티브한 웹을 제작하기 위해 공부하고 있습니다.</p>
+                <p class="kr desc">
+                  HTML과 CSS는 물론 Javascript/jQuery 하드코딩에 익숙합니다. 워드프레스, 카페24 환경에서 작업을 진행해 본 적이 있으며, PHP에 대한 기초적인 지식이 있습니다.
+                </p>
+                <p class="en desc">I use HTML5 and CSS3 to publish things that adhere to web standards. The main work
+                  environment setting is to use Visual Studio Code and Figurema or Photoshop. I'm very interested in how
+                  to increase accessibility and responsive work. I'm studying to create an interactive web. </p>
+                <p class="en desc">
+                  I am familiar with JavaScript/jQuery hardcoding, as well as HTML and CSS. I have worked in WordPress, Cafe24 environments, and I have a basic knowledge of PHP.
+                </p>
+              </div>
+              <!-- Content 2 -->
+              <div class="cont-area">
+                <div class="icon"><span class="gg material-symbols-outlined">
+                    award_star
+                  </span></div>
+                <h4 class="head">책임감<sup>02</sup></h4>
+                <p class="kr desc">맡은 일은 책임감을 가지고 끝까지 완수합니다. 기한이나 조건은 반드시 지키려고 노력합니다. 클라이언트나 함께 일하는 팀원들 간의 신뢰를 중요하게 생각하며, 할 수
+                  있는 일은 최선을 다합니다.</p>
+                <p class="en desc">I do my job responsibly and complete it until the end. I always try to meet the
+                  deadline or conditions. I value trust between the client and the team members I work with, and I'll
+                  do my best.</p>
+              </div>
+              <!-- Content 3 -->
+              <div class="cont-area">
+                <div class="icon"><span class="gg material-symbols-outlined">
+                    hub
+                  </span></div>
+                <h4 class="head">성실함<sup>03</sup></h4>
+                <p class="kr desc">조직 생활에서 가장 중요한 것은 성실함이라고 생각합니다. 시간 약속은 반드시 지키며, 성실하게 임합니다. 주어진 일에 대해 묵묵하게, 꾸준하게 임합니다. 안 되는
+                  일은 천천히 해결방안을 모색하고 고민합니다. 느리지만 꾸준하게 나아가는 방법을 선호합니다.</p>
+                <p class="en desc">I think the most important thing in an organization is sincerity. I always keep our time
+                  promises and be sincere. I am silent and constantly working on our given tasks. I slowly seek and
+                  think about solutions that cannot be done. I prefer a slow but steady way.</p>
+              </div>
+              <!-- Content 4 -->
+              <div class="cont-area">
+                <div class="icon"><span class="gg material-symbols-outlined">
+                    handshake
+                  </span></div>
+                <h4 class="head">커뮤니케이션<sup>04</sup></h4>
+                <p class="kr desc">연 5회 이상 외부 미팅에 참가하여 주도적으로 클라이언트와 의견을 주고 받았으며, 프로젝트가 진행되는 동안에도 직접 클라이언트와 팀원 사이의 징검다리 역할을 수행하였습니다. 효율적으로 개인 및 팀의 일정과 리소스 관리에 힘썼고, 이 과정에서 팀원 간 의견 조율을 위해 노력하였습니다.</p>
+                <p class="en desc">I participated in external meetings more than five times a year and took the lead in exchanging opinions with clients, and even during the project, we directly served as a stepping stone between clients and team members. I worked efficiently on individual and team schedules and resource management, and in this process, I worked hard to coordinate opinions among team members.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 04 : Portfolio-->
+    <section id="section-04" class="mainPortfolio sc-max full-h">
+      <div class="layout">
+        <div class="sec-box">
+          <div class="sec-tit">
+            <h3 class="sec-head" data-ani="fade-up">Portfolio</h3>
+            <p class="sec-desc">See the project I worked on before.</p>
+          </div>
+          <div class="cont-box">
+            <!-- Portfolio 항목 -->
+            <div class="gallery-wrap">
+              <div class="item ani-item" data-name="allgot" data-address="/page/allgot.html">
+                <a class="p-cursor" href="#none" onclick="includeModal(this)">
+                  <div class="img-area"></div>
+                </a>
+              </div>
+              <div class="item ani-item" data-name="samyang" data-address="/page/samyang.html">
+                <a class="p-cursor" href="#none" onclick="includeModal(this)">
+                  <div class="img-area"></div>
+                </a>
+              </div>
+              <div class="item ani-item" data-name="geoplan" data-address="/page/geoplan.html">
+                <a class="p-cursor" href="#none" onclick="includeModal(this)">
+                  <div class="img-area"></div>
+                </a>
+              </div>
+              <div class="item ani-item" data-name="enertech" data-address="/page/enertech.html">
+                <a class="p-cursor" href="#none" onclick="includeModal(this)">
+                  <div class="img-area"></div>
+                </a>
+              </div>
+              <div class="item ani-item" data-name="hns" data-address="/page/hns.html">
+                <a class="p-cursor" href="#none" onclick="includeModal(this)">
+                  <div class="img-area"></div>
+                </a>
+              </div>
+              <div class="item ani-item" data-name="dsuaw" data-address="/page/dsuaw.html">
+                <a class="p-cursor" href="#none" onclick="includeModal(this)">
+                  <div class="img-area"></div>
+                </a>
+              </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal-wrap fade" tabindex="-1">
+          <div class="modal-dialog">
+            <button class="modal-close-btn"><span class="gg material-symbols-outlined">
+              close
+              </span></button>
+            <div class="modal-content" data-include="">
+              <!-- 외부 jsp 파일 들어올 부분 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section slogan -->
+    <section class="sc-slogan sc-max">
+      <div class="marq-box">
+        <span class="text">
+          <i>Better late than never</i>
+          <i>Better late than never</i>
+        </span>
+      </div>
+    </section>
+    <!-- section 05 : History -->
+    <section id="section-05" class="mainHistory sc-max">
+      <div class="layout inner">
+        <div class="sec-box">
+          <div class="sec-tit">
+            <h3 class="sec-head" data-ani="fade-up">History</h3>
+            <p class="sec-desc">My work history steps</p>
+          </div>
+        </div>
+        <ul class="history-list">
+          <li>2022 / &#39;뉴로팩&#39; 웹 사이트 구축</li>
+          <li>2022 / &#39;네이처그린&#39; 웹 디자인 및 사이트 구축</li>
+          <li>2022 / &#39;포커스H&S&#39; 웹 사이트 구축 및 DNS 연결 작업</li>
+          <li>2023 / &#39;동성기업&#39; 웹 디자인 및 사이트 구축웹 사이트 구축 프로젝트</span></li>
+          <li>2023 / &#39;에너테크&#39; 웹 사이트 구축</li>
+          <li>2023 / &#39;빌리키즈&#39; 카페24 스킨 리뉴얼 작업</li>
+          <li>2023 / &#39;삼양정밀화학&#39; 웹 디자인 및 사이트 구축</li>
+          <li>2023 / &#39;올곧&#39; 브랜드 웹 디자인 및 사이트 구축</li>
+          <li>2023 / &#39;지오플랜&#39; 웹 사이트 및 그래픽 애니메이션 구축</li>
+          <li>2023 / &#39;스퀴즈맥주&#39; 웹 디자인</li>
+          <li>2023 / &#39;제이피오토메이션&#39; 웹 사이트 구축 및 DNS 연결 작업</li>
+          <li>2024 / &#39;대운 프라스틱&#39; 웹 디자인 및 사이트 구축</li>
+          <li>2024 / &#39;리파워텍&#39; 웹 디자인</li>
+          <li>2024 / &#39;거제영농조합&#39; 웹 디자인</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="section-06" class="mainStep sc-max">
+      <div class="cta" data-ani="fade-up">
+        <div class="cta-bg"></div>
+        <div class="sec-box">
+          <div class="sec-tit">
+            <h3 class="sec-head">Let's work together!</h3>
+            <p class="sec-desc">I'm looking for a job as a web publisher.</p>
+          </div>
+          <a class="btn_email btn-wrap" href="mailto:ceun0910@gmail.com">Get in touch
+            <span class="material-symbols-outlined">arrow_right_alt</span>
+            <span class="btn_hover"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- mobile GNB -->
+  <div class="flex-menu">
+    <div class="flex-menu_layout">
+      <a class="close-btn" href="#none">
+        <i class="icon toggle-btn-icon"></i>
+        <span class="gg material-symbols-outlined">
+          close
+          </span>
+      </a>
+      <div class="gnb-wrap">
+        <ul>
+          <li class="item">
+            <a class="link" href="#section-01">Home</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#section-02">Intro</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#section-03">Skill</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#section-04">Portfolio</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#section-05">History</a>
+          </li>
+        </ul>
+      </div>
+      <div class="btn_mode-wrap">
+        <button class="btn_mode">
+          <div class="toggle-dot"></div>
+          <div class="md dark"><span class="icon material-symbols-outlined">
+            dark_mode
+            </span>Dark
+          </div>
+          <div class="md light"><span class="icon material-symbols-outlined">
+            light_mode
+            </span>Light
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="">
+    <a href="#section-01" class="topBtn hide sl-btn">
+      <span class="gg sl-item material-symbols-outlined">arrow_upward</span>
+      <span class="gg sl-item material-symbols-outlined">arrow_upward</span>
+    </a>
+    <div class="ft-top">
+      <div class="info phone">
+        <p class="info-1">My Phone Number</p>
+        <p class="info-2">010-9907-1369</p>
+      </div>
+      <div class="info mail">
+        <p class="info-1">My Email Address</p>
+        <p class="info-2">ceun0910@gmail.com</p>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <ul class="sns-box">
+        <li class="item"><a class="sns-icon sl-btn" href="#none">
+          <span class="gg sl-item material-symbols-outlined">deployed_code</span>
+          <span class="gg sl-item material-symbols-outlined">deployed_code</span>
+          Github</a></li>
+        <li class="item"><a class="sns-icon sl-btn" href="#none">
+          <span class="gg sl-item material-symbols-outlined">globe_asia</span>
+          <span class="gg sl-item material-symbols-outlined">globe_asia</span>
+          Facebook</a></li>
+        <li class="item"><a class="sns-icon sl-btn" href="#none">
+          <span class="gg sl-item material-symbols-outlined">Share</span>
+          <span class="gg sl-item material-symbols-outlined">Share</span>
+        </a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

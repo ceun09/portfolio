@@ -1,0 +1,90 @@
+/* Footer CSS */
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ft-top {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+}
+.ft-top .info {
+  text-align: center;
+}
+.ft-bottom {
+  margin: 50rem 0 40rem;
+  position: relative;
+}
+.sns-box {
+  display: flex;
+  gap: 12rem;
+}
+.sns-box .item {
+}
+.sns-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36rem;
+  height: 36rem;
+  font-size: 0;
+  background-color: var(--gray-color-300);
+  border-radius: 100%;
+}
+.sns-icon .gg {
+  color: #222;
+  font-size: 24rem;
+}
+
+/* Dark Mode */
+.dark-mode #footer {
+  background-color: var(--dark-bg);
+}
+.dark-mode .ft-top .info-1 {
+  color: var(--dark-white-100);
+}
+.dark-mode .ft-top .info-2 {
+  color: var(--dark-white-300);
+}
+.dark-mode .sns-icon {
+  background-color: var(--dark-white-100);
+}
+
+/* Top Button */
+.dark-mode .topBtn {
+  background-color: var(--dark-white-100);
+}
+.dark-mode .topBtn .gg {
+  color: var(--dark-bg);
+}
+.topBtn {
+  position: fixed;
+  right: 20rem;
+  bottom: 18rem;
+  width: 55rem;
+  height: 55rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  border-radius: 100%;
+  text-align: center;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: .6s;
+  -moz-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+  z-index: 99;
+}
+.topBtn.hide {
+  opacity: 0;
+  visibility: hidden;
+  bottom: -20rem;
+}
+.topBtn .gg {
+  color: #fff;
+  font-size: 32rem;
+}
