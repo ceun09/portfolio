@@ -1,4 +1,4 @@
-document.write('<script src="/script/inputGalleryData.js"></script>');
+document.write('<script src="./script/inputGalleryData.js"></script>');
 
 window.addEventListener('load', () => {
     mainAnchor();   // 스크롤 애니메이션
