@@ -398,6 +398,12 @@ section.active .ani-item.check {
   .sec-head {
     font-size: 48rem;
   }
+  .feat-tabs .box {
+    padding: 15rem;
+  }
+  .feat-tabs .box .h-kr {
+    font-size: 18rem;
+  }
   .gallery-wrap {
     gap: var(--size-gap-20);
   }
@@ -424,6 +430,9 @@ section.active .ani-item.check {
   }
 }
 @media screen and (max-width: 1023px) and (min-width: 769px) {
+  .feat-tabs .box .h-en {
+    font-size: 12rem;
+  }
 }
 @media screen and (max-width: 768px) {
   html {
