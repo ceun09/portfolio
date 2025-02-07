@@ -579,6 +579,49 @@ section.active .ani-item.check {
   .col-2 .txt-desc {
     font-size: 13rem;
   }
+  .sec-box {
+    padding: 20rem 0;
+  }
+  .sec-head {
+    font-size: 24rem;
+  }
+  .sec-desc {
+    font-size: 14rem;
+  }
+  .history-list li {
+    margin-bottom: 3rem;
+    font-size: 13rem;
+  }
+  .mainStep {
+    padding: 40rem 0;
+  }
+  .cta .sec-box::before, .cta .sec-box::after {
+    display: none;
+  }
+  .cta .sec-head {
+    font-size: 21rem;
+  }
+  .cta .sec-desc {
+    font-size: 14rem;
+  }
+  .btn_email {
+    margin-top: 30rem;
+    font-size: 14rem;
+  }
+  .ft-top .info-1,
+  .ft-top .info-2 {
+    font-size: 11rem;
+  }
+  .ft-bottom {
+    margin: 30rem 0 40rem;
+  }
+  .sns-icon {
+    width: 27rem;
+    height: 27rem;
+  }
+  .sns-icon .gg {
+    font-size: 18rem;
+  }
   .flex-menu_layout {
     padding: 30rem;
   }
@@ -600,5 +643,12 @@ section.active .ani-item.check {
   }
   .flex-menu .md .icon {
     font-size: 18rem;
+  }
+  .topBtn {
+    width: 40rem;
+    height: 40rem;
+  }
+  .topBtn .gg {
+    font-size: 24rem;
   }
 }
