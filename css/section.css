@@ -24,7 +24,6 @@
 }
 .visual-side {
   width: 20vw;
-  border-radius: 50rem 0 0 50rem;
 }
 .visual-side .box {
   padding: 15rem 0;
@@ -75,6 +74,7 @@
   position: absolute;
   bottom: 30rem;
   left: 30rem;
+  right: 30rem;
 }
 .visual-text-wrap .detail {
   font-size: 29rem;
