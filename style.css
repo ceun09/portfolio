@@ -475,9 +475,11 @@ section.active .ani-item.check {
   }
   .feat-tabs {
     padding: 30rem 20rem;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: flex-start; */
     gap: 15rem;
-    overflow-x: auto;
+    /* overflow-x: auto; */
   }
   .feat-tabs .box {
     padding: 15rem;
@@ -554,15 +556,21 @@ section.active .ani-item.check {
     left: 30rem;
     right: unset;
   }
+  .visual-side {
+    width: 45vw;
+  }
   .vs-text li {
     font-size: 13rem;
   }
   .visual-head .el {
     font-size: 48rem;
   }
+  .visual-text-wrap {
+    bottom: 60rem;
+  }
   .visual-text-wrap .detail {
-    margin-bottom: 5rem;
-    font-size: 14rem;
+    margin-bottom: 10rem;
+    font-size: 16rem;
   }
   .intro-head {
     font-size: 32rem;
@@ -572,6 +580,9 @@ section.active .ani-item.check {
   }
   .intro-img {
     margin: 30rem 0 40rem;
+  }
+  .col-2 {
+    gap: 10rem;
   }
   .col-2 .txt-head {
     font-size: 19rem;
@@ -587,6 +598,28 @@ section.active .ani-item.check {
   }
   .sec-desc {
     font-size: 14rem;
+  }
+  .cont-box {
+    margin-top: 0;
+  }
+  .feat-tabs .box {
+    gap: 5rem;
+    border-radius: 10rem;
+  }
+  .feat-tabs .box .h-kr {
+    font-size: 16rem;
+  }
+  .mainFeature .tab-content {
+    height: 600rem;
+  }
+  .mainFeature .cont-area .head {
+    font-size: 22rem;
+  }
+  .mainFeature .cont-area .desc {
+    font-size: 13rem;
+  }
+  .mainFeature .cont-area .icon .gg {
+    font-size: 27rem;
   }
   .history-list li {
     margin-bottom: 3rem;
