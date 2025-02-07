@@ -456,6 +456,9 @@ section.active .ani-item.check {
   .cont-box {
     margin-top: var(--size-gap-30);
   }
+  .visual-side {
+    width: 100%;
+  }
   .visual-head .el {
     font-size: 72rem;
     line-height: 1;
@@ -536,5 +539,66 @@ section.active .ani-item.check {
 @media screen and (max-width: 540px) {
   html {
     font-size: 0.26666666666666665vw;
+  }
+  #header, #header.color {
+    padding: 8rem 15rem;
+  }
+  .hd-logo {
+    font-size: 18rem;
+  }
+  .gnb-wrap.mobile .toggle-btn {
+    width: 24rem;
+    height: 24rem;
+  }
+  .visual-side-wrap {
+    left: 30rem;
+    right: unset;
+  }
+  .vs-text li {
+    font-size: 13rem;
+  }
+  .visual-head .el {
+    font-size: 48rem;
+  }
+  .visual-text-wrap .detail {
+    margin-bottom: 5rem;
+    font-size: 14rem;
+  }
+  .intro-head {
+    font-size: 32rem;
+  }
+  .intro-desc {
+    font-size: 14rem;
+  }
+  .intro-img {
+    margin: 30rem 0 40rem;
+  }
+  .col-2 .txt-head {
+    font-size: 19rem;
+  }
+  .col-2 .txt-desc {
+    font-size: 13rem;
+  }
+  .flex-menu_layout {
+    padding: 30rem;
+  }
+  .flex-menu .gnb-wrap .item:not(:last-child) {
+    margin-bottom: 15rem;
+  }
+  .flex-menu .gnb-wrap .link {
+    font-size: 24rem;
+  }
+  .flex-menu .close-btn {
+    right: 30rem;
+    top: 30rem;
+  }
+  .flex-menu .close-btn .gg {
+    font-size: 32rem;
+  }
+  .flex-menu .btn_mode .md {
+    font-size: 18rem;
+  }
+  .flex-menu .md .icon {
+    font-size: 18rem;
   }
 }
