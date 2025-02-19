@@ -16,7 +16,6 @@ function galleryFunc() {
     // thumbnail 경로 지정
     if(name) {
       path = "./images/thumbnail/th_"+name+".jpg";
-      console.log(path)
     }
 
     // data-name이 지정되고, 경로가 유효한 경우만 실행
