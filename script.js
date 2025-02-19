@@ -310,7 +310,6 @@ function includeModal(e) {
         const modalBox = document.querySelector('.modal-dialog');
         if(isModalOpen && !modalBox.contains(e.target)) {
             // closeModal();
-            console.log('hey')
         }
     }
     document.addEventListener('click', handleClickOutside);
