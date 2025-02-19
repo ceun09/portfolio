@@ -15,7 +15,7 @@ function galleryFunc() {
 
     // thumbnail 경로 지정
     if(name) {
-      path = "images/thumbnail/th_"+name+".jpg";
+      path = "./images/thumbnail/th_"+name+".jpg";
       console.log(path)
     }
 
