@@ -603,7 +603,7 @@ section.active .ani-item.check {
     font-size: 14rem;
   }
   .cont-box {
-    margin-top: 0;
+    /* margin-top: 0; */
   }
   .mainFeature .cont-area .head > sup {
     font-size: 12rem;
@@ -634,14 +634,14 @@ section.active .ani-item.check {
     font-size: 22rem;
   }
   .mainFeature .cont-area .desc {
-    font-size: 13rem;
+    font-size: 11rem;
   }
   .mainFeature .cont-area .icon .gg {
     font-size: 27rem;
   }
   .history-list li {
     margin-bottom: 3rem;
-    font-size: 13rem;
+    font-size: 12rem;
   }
   .mainStep {
     padding: 40rem 0;
@@ -680,11 +680,11 @@ section.active .ani-item.check {
     margin-bottom: 15rem;
   }
   .flex-menu .gnb-wrap .link {
-    font-size: 24rem;
+    font-size: 18rem;
   }
   .flex-menu .close-btn {
-    right: 30rem;
-    top: 30rem;
+    right: 24rem;
+    top: 24rem;
   }
   .flex-menu .close-btn .gg {
     font-size: 32rem;

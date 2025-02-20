@@ -92,9 +92,9 @@ function mainAnchor() {
 
 // 다크 모드 버튼
 function modeChange() {
-    const button = document.querySelector('.btn_mode');
-    const mode = button.querySelectorAll('.md');
-    const dot = button.querySelector('.toggle-dot');
+    let button = document.querySelector('.btn_mode');
+    let mode = button.querySelectorAll('.md');
+    let dot = button.querySelector('.toggle-dot');
 
     button.addEventListener('click', ()=> {
         // on 켜졌을 때 다크 모드
