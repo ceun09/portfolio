@@ -129,7 +129,7 @@ function activeGnb() {
 function activeTap() {
     const buttons = document.querySelectorAll('.feat-tabs .box');
     const contentArea = document.querySelector('.feat-cont');
-    const contents = contentArea.querySelectorAll('.cont-area')
+    const contents = contentArea.querySelectorAll('.cont-area');
 
     let pageY = window.scrollY || window.pageYOffset;
     let contentHeight = contentArea.getBoundingClientRect().top;
@@ -157,12 +157,21 @@ function activeTap() {
             e.target.classList.add('on');
 
             contents.forEach((content) => {
+                contentHeightCalc(content);
                 content.classList.remove('on');
             })
             contents[index].classList.add('on');
             window.scrollTo(0, absoluteContentHeight - correctionFactor);
         })
     })
+
+    function contentHeightCalc(this) {
+        let height = this.getBoundingClientRect();
+        console.log(this);
+        console.log(height);
+
+        contentArea.style.height = h + 'px';
+    }
 }
 
 // 탑 버튼

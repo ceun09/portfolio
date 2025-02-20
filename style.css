@@ -602,12 +602,24 @@ section.active .ani-item.check {
   .cont-box {
     margin-top: 0;
   }
+  .mainFeature .cont-area .head > sup {
+    font-size: 12rem;
+  }
   .feat-tabs .box {
+    padding: 15rem 10rem;
     gap: 5rem;
     border-radius: 10rem;
   }
+  .feat-tabs .box::after {
+    bottom: -7rem;
+    width: 15rem;
+    height: 15rem;
+  }
   .feat-tabs .box .h-kr {
-    font-size: 16rem;
+    font-size: 14rem;
+  }
+  .feat-tabs .box .h-en {
+    font-size: 11rem;
   }
   .mainFeature .tab-content {
     height: 600rem;
