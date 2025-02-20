@@ -605,6 +605,9 @@ section.active .ani-item.check {
   .mainFeature .cont-area .head > sup {
     font-size: 12rem;
   }
+  .feat-tabs {
+    padding: 0 20rem;
+  }
   .feat-tabs .box {
     padding: 15rem 10rem;
     gap: 5rem;

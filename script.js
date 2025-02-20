@@ -157,7 +157,8 @@ function activeTap() {
             e.target.classList.add('on');
 
             contents.forEach((content) => {
-                contentHeightCalc(content);
+                console.log(content)
+                // contentHeightCalc(content);
                 content.classList.remove('on');
             })
             contents[index].classList.add('on');
