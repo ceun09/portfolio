@@ -157,21 +157,30 @@ function activeTap() {
             e.target.classList.add('on');
 
             contents.forEach((content) => {
-                console.log(content)
-                // contentHeightCalc(content);
                 content.classList.remove('on');
             })
             contents[index].classList.add('on');
+            contentHeightCalc(contents[index]);
             window.scrollTo(0, absoluteContentHeight - correctionFactor);
         })
     })
 
-    function contentHeightCalc(this) {
-        let height = this.getBoundingClientRect();
-        console.log(this);
-        console.log(height);
+    // content box 초기 height 값
+    contentHeightCalc(contents[0]);
 
-        contentArea.style.height = h + 'px';
+    // 창 크기 변경 시시
+    window.addEventListener('resize', ()=> {
+        contents.forEach((content) => {
+            if(content.classList.contains('on')) {
+                contentHeightCalc(content);
+            }
+        })
+    })
+
+    function contentHeightCalc(element) {
+        let height = element.getBoundingClientRect().height;
+
+        contentArea.style.height = height + 'px';
     }
 }
 

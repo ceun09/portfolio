@@ -398,6 +398,9 @@ section.active .ani-item.check {
   .sec-head {
     font-size: 48rem;
   }
+  .mainPortfolio .sec-box {
+    padding-top: 20rem;
+  }
   .feat-tabs .box {
     padding: 15rem;
   }
