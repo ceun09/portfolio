@@ -181,5 +181,32 @@
   }
 }
 @media screen and (max-width: 540px) {
-
+  .modal-layout {
+    padding: var(--size-gap-30) 0 var(--size-gap-60);
+  }
+  .modal-section:not(:last-child) {
+    margin-bottom: var(--size-gap-30);
+  }
+  .modal-close-btn {
+    right: 16rem;
+  }
+  .modal-close-btn .gg {
+    font-size: 36rem;
+  }
+  .heading .project {
+    font-size: 27rem;
+  }
+  .heading .date,
+  .sum-text,
+  .text-line .txt {
+    font-size: 12rem;
+  }
+  .modal-top {
+    margin: 40rem auto 0;
+    width: 60rem;
+    height: 60rem;
+  }
+  .modal-top .btn {
+    font-size: 18rem;
+  }
 }
