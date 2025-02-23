@@ -377,7 +377,6 @@
 }
 .history-list li {
   position: relative;
-  margin-bottom: var(--size-gap-10);
   font-size: 21rem;
   line-height: 1.8;
   -webkit-transition: .3s;
@@ -386,6 +385,9 @@
   transition: .3s;
   overflow: hidden;
   z-index: 1;
+}
+.history-list li:not(:last-child) {
+  margin-bottom: var(--size-gap-10);
 }
 .history-list li:hover {
   color: #fff;

@@ -92,15 +92,30 @@ function mainAnchor() {
 
 // 다크 모드 버튼
 function modeChange() {
-    let button = document.querySelector('.btn_mode');
-    let mode = button.querySelectorAll('.md');
-    let dot = button.querySelector('.toggle-dot');
+    let button_PC = document.querySelector('.gnbMain .btn_mode');
+    let button_Mobile = document.querySelector('.flex-menu .btn_mode');
 
-    button.addEventListener('click', ()=> {
-        // on 켜졌을 때 다크 모드
-        button.classList.toggle('on');
-        document.body.classList.toggle('dark-mode');
+    button_PC.addEventListener('click', controlMode)
+    button_Mobile.addEventListener('click', () => {
+        controlMode(event);
+
+        // 모바일 메뉴 닫기
+        document.querySelector('.flex-menu').classList.remove('active');
     })
+
+    function controlMode(event) {
+        let target = event.target;
+
+        // event target이 md에 오도록 조정
+        if(target.parentNode.classList.contains('btn_mode')) {
+            target = target.parentNode;
+        }
+
+        // on 켜졌을 때 다크 모드-
+        button_PC.classList.toggle('on');
+        button_Mobile.classList.toggle('on');
+        document.body.classList.toggle('dark-mode');
+    }
 }
 
 // 모바일 gnb 메뉴

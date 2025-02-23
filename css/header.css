@@ -140,10 +140,10 @@
   font-size: 15rem;
 }
 .md.dark, .on .md.light {
-  display: none;
+  display: flex;
 }
 .md.light, .on .md.dark {
-  display: flex;
+  display: none;
 }
 .md .icon {
   max-width: 20rem;
@@ -156,40 +156,19 @@
 }
 .on .md.dark .icon,
 .md.light .icon {
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
-}
-.md.dark .icon,
-.on .md.light .icon {
   transform: translateY(10rem);
   opacity: 0;
   visibility: hidden;
+}
+.md.dark .icon,
+.on .md.light .icon {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (max-width: 768px) {
   .gnbMain .btn_mode-wrap {
     display: none;
   }
-}
-
-/* 숨김 처리 */
-.toggle-dot {
-  display: none;
-  position: absolute;
-  left: 10rem;
-  top: 50%;
-  width: 22rem;
-  height: 22rem;
-  background-color: #222;
-  border-radius: 100%;
-  transform: translateY(-50%);
-  -webkit-transition: .3s;
-  -moz-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-  z-index: 2;
-}
-.on .toggle-dot {
-  left: calc(100% - 30rem);
 }

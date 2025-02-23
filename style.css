@@ -534,11 +534,29 @@ section.active .ani-item.check {
     font-size: 68rem;
   }
   .history-list li {
-    font-size: 17rem;
+    font-size: 18rem;
   }
   .cta {
     padding: var(--size-gap-30);
     width: calc(100% - 60rem);
+  }
+  .flex-menu .gnb-wrap .link {
+    font-size: 36rem;
+  }
+  .flex-menu .gnb-wrap .item:not(:last-child) {
+    margin-bottom: 30rem;
+  }
+  .flex-menu .btn_mode {
+    width: 115rem;
+    height: 50rem;
+  }
+  .flex-menu .btn_mode .md {
+    font-size: 21rem;
+  }
+  .flex-menu .md .icon {
+    font-size: 27rem;
+    max-width: 27rem;
+    max-height: 27rem;
   }
 }
 @media screen and (max-width: 540px) {
@@ -640,7 +658,6 @@ section.active .ani-item.check {
     font-size: 27rem;
   }
   .history-list li {
-    margin-bottom: 3rem;
     font-size: 12rem;
   }
   .mainStep {
@@ -689,8 +706,12 @@ section.active .ani-item.check {
   .flex-menu .close-btn .gg {
     font-size: 32rem;
   }
+  .flex-menu .btn_mode {
+    width: 22vw;
+    height: 35rem;
+  }
   .flex-menu .btn_mode .md {
-    font-size: 18rem;
+    font-size: 15rem;
   }
   .flex-menu .md .icon {
     font-size: 18rem;
